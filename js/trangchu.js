@@ -25,13 +25,11 @@ window.onload = function () {
 	autocomplete(document.getElementById('search-box'), list_products);
 
 	// thêm tags (từ khóa) vào khung tìm kiếm
-	var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+	var tags = ["nvdia", "intel", "cossar", "amd"];
 	for (var t of tags) addTags(t, "index.html?search=" + t);
 
 	// Thêm danh sách hãng điện thoại
-	var company = ["Apple.jpg", "Samsung.jpg", "Oppo.jpg", "Nokia.jpg", "Huawei.jpg", "Xiaomi.png",
-		"Realme.png", "Vivo.jpg", "Philips.jpg", "Mobell.jpg", "Mobiistar.jpg", "Itel.jpg",
-		"Coolpad.png", "HTC.jpg", "Motorola.jpg"
+	var company = ["intel.png" , "cossar.png", "amd.png", "gigabyte.png", "westerm digital"
 	];
 	for (var c of company) addCompany("img/company/" + c, c.slice(0, c.length - 4));
 
