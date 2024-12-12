@@ -79,16 +79,17 @@ function phanTich_URL_chiTietSanPham() {
     document.getElementById('detailPromo').innerHTML = getDetailPromo(sanPhamHienTai);
 
     // Cập nhật thông số
-    var info = document.getElementsByClassName('info')[0];
-    var s = addThongSo('Màn hình', sanPhamHienTai.detail.screen);
-    s += addThongSo('Hệ điều hành', sanPhamHienTai.detail.os);
-    s += addThongSo('Camara sau', sanPhamHienTai.detail.camara);
-    s += addThongSo('Camara trước', sanPhamHienTai.detail.camaraFront);
-    s += addThongSo('CPU', sanPhamHienTai.detail.cpu);
-    s += addThongSo('RAM', sanPhamHienTai.detail.ram);
-    s += addThongSo('Bộ nhớ trong', sanPhamHienTai.detail.rom);
-    s += addThongSo('Thẻ nhớ', sanPhamHienTai.detail.microUSB);
-    s += addThongSo('Dung lượng pin', sanPhamHienTai.detail.battery);
+    
+   var info = document.getElementsByClassName('info')[0];
+   var s = addThongSo('Socket', sanPhamHienTai.detail.Socket);
+   s += addThongSo('Dòng CPU', sanPhamHienTai.detail.DongCPU);
+   s += addThongSo('CPU', sanPhamHienTai.detail.CPU);
+   s += addThongSo('Số nhân', sanPhamHienTai.detail.SoNhan);
+   s += addThongSo('Số luồng ', sanPhamHienTai.detail.SoLuong);
+   s += addThongSo('Công nghệ', sanPhamHienTai.detail.CongNghe);
+   s += addThongSo('Tốc độ Turbo tối đa của P-core"', sanPhamHienTai.detail.PCore);
+   s += addThongSo('Tốc độ Turbo tối đa của E-core', sanPhamHienTai.detail.ECore);
+ 
     info.innerHTML = s;
 
     // Cập nhật hình

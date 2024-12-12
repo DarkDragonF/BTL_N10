@@ -459,166 +459,161 @@ var list_products = [{
     },
     "masp": "Hua2"
 }, {
-    "name": "Nokia black future",
-    "company": "Nokia",
+    "name": "Intel Core i9 14900KS ",
+    "company": "Intel",
     "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
-    "price": "999.999.000",
+    "price": "18.490.000",
     "star": 5,
-    "rateCount": 9999,
+    "rateCount": 120,
     "promo": {
         "name": "giamgia",
-        "value": "1.000"
+        "value": "320.000"
     },
     "detail": {
-        "screen": "4K, Chống nước, Chống trầy",
-        "os": "iOS + Android song song",
-        "camara": "Bộ tứ camara tàng hình",
-        "camaraFront": "Chuẩn thế giới 50MP",
-        "cpu": "16 nhân 128 bit",
-        "ram": "Không giới hạn",
-        "rom": "Dùng thoải mái",
-        "microUSB": "Không cần",
-        "battery": "Không cần sạc"
+"Socket":  " FCLGA1700 ",
+"DongCPU":"Core i9",
+"CPU": " Intel® Core® i9-14900KS (Raptor Lake)",
+ "SoNhan": " 24 (8 Performance-cores/16 Efficient-cores)",
+ "SoLuong": "32",
+"CongNghe": "Intel Turbo Boost Max Tần số 3.0    5.8 GHz",
+"PCore": " 5.4 GHz",
+"ECore": "4.3 GHz",
+    
     },
-    "masp": "Nok1"
+    "masp": "i9_14_KF"
 }, {
-    "name": "Samsung Galaxy A7 (2018)",
-    "company": "Samsung",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/194327/samsung-galaxy-a7-2018-128gb-black-400x400.jpg",
-    "price": "8.990.000",
-    "star": 4,
-    "rateCount": 22,
-    "promo": {
-        "name": "tragop",
-        "value": "0"
-    },
-    "detail": {
-        "screen": "Super AMOLED, 6.0', Full HD+",
-        "os": "Android 8.0 (Oreo)",
-        "camara": "24 MP, 8 MP và 5 MP (3 camera)",
-        "camaraFront": "24 MP",
-        "cpu": "Exynos 7885 8 nhân 64-bit",
-        "ram": "4 GB",
-        "rom": "64 GB",
-        "microUSB": "MicroSD, hỗ trợ tối đa 512 GB",
-        "battery": "3300 mAh"
-    },
-    "masp": "Sam3"
-}, {
-    "name": "Realme 2 Pro 8GB/128GB",
-    "company": "Realme",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/192002/oppo-realme-2-pro-black-600x600.jpg",
-    "price": "6.990.000",
+    "name": "Intel Core i9 14900F",
+    "company": "Intel",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
+    "price": "14.990.000₫",
     "star": 5,
-    "rateCount": 16,
+    "rateCount": 120,
     "promo": {
-        "name": "moiramat",
-        "value": ""
+      "name": "giamgia",
+      "value": "320.000"
     },
     "detail": {
-        "screen": "IPS LCD, 6.3', Full HD+",
-        "os": "ColorOS 5.2 (Android 8.1)",
-        "camara": "16 MP và 2 MP (2 camera)",
-        "camaraFront": "16 MP",
-        "cpu": "Qualcomm Snapdragon 660 8 nhân",
-        "ram": "8 GB",
-        "rom": "128 GB",
-        "microUSB": "MicroSD, hỗ trợ tối đa 256 GB",
-        "battery": "3500 mAh"
+      "Socket": "FCLGA1700",
+      "DongCPU": "Core i9",
+      "CPU": "Intel® Core® i9-14900F (Raptor Lake)",
+      "SoNhan": "24 (8 Performance-cores/16 Efficient-cores)",
+      "SoLuong": "32",
+      "CongNghe": "Intel Turbo Boost Max Tần số 3.0    5.6 GHz",
+      "PCore": "5.4 GHz",
+      "ECore": "4.3 GHz"
     },
-    "masp": "Rea0"
+    "masp": "i9_14_F"
 }, {
-    "name": "Realme 2 4GB/64GB",
-    "company": "Realme",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/193462/realme-2-4gb-64gb-docquyen-600x600.jpg",
-    "price": "4.490.000",
+    "name": "Intel Core i9 14900",
+  "company": "Intel",
+  "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
+  "price": "15.690.000₫",
+  "star": 5,
+  "rateCount": 120,
+  "promo": {
+    "name": "giamgia",
+    "value": "320.000"
+  },
+  "detail": {
+    "Socket": "FCLGA1700",
+    "DongCPU": "Core i9",
+    "CPU": "Intel® Core® i9-14900 (Raptor Lake)",
+    "SoNhan": "24 (8 Performance-cores/16 Efficient-cores)",
+    "SoLuong": "32",
+    "CongNghe": "Intel Turbo Boost Max Tần số 3.0    5.6 GHz",
+    "PCore": "5.4 GHz",
+    "ECore": "4.3 GHz"
+    },
+    "masp": "i9_14"
+}, {
+    "name": "Intel Core i9 14900KF",
+  "company": "Intel",
+  "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
+  "price": "12.490.000₫",
+  "star": 5,
+  "rateCount": 120,
+  "promo": {
+    "name": "giamgia",
+    "value": "320.000"
+  },
+  "detail": {
+    "Socket": "FCLGA1700",
+    "DongCPU": "Core i9",
+    "CPU": "Intel® Core® i9-14900KF (Raptor Lake)",
+    "SoNhan": "24 (8 Performance-cores/16 Efficient-cores)",
+    "SoLuong": "32",
+    "CongNghe": "Intel Turbo Boost Max Tần số 3.0    5.8 GHz",
+    "PCore": "5.6 GHz",
+    "ECore": "4.4 GHz"
+    },
+    "masp": "i9_14_KF"
+}, {
+    "name": "Intel Core i9 14900K",
+  "company": "Intel",
+  "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
+  "price": "12.990.000₫",
+  "star": 5,
+  "rateCount": 120,
+  "promo": {
+    "name": "giamgia",
+    "value": "320.000"
+  },
+  "detail": {
+    "Socket": "FCLGA1700",
+    "DongCPU": "Core i9",
+    "CPU": "Intel® Core® i9-14900K (Raptor Lake)",
+    "SoNhan": "24 (8 Performance-cores/16 Efficient-cores)",
+    "SoLuong": "32",
+    "CongNghe": "Intel Turbo Boost Max Tần số 3.0    5.8 GHz",
+    "PCore": "5.6 GHz",
+    "ECore": "4.4 GHz"
+    },
+    "masp": "i9_14_K"
+}, {
+    "name": "Intel Core i9 10900X",
+  "company": "Intel",
+  "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
+  "price": "15.490.000₫",
+  "star": 5,
+  "rateCount": 120,
+  "promo": {
+    "name": "giamgia",
+    "value": "320.000"
+  },
+  "detail": {
+    "Socket": "FCLGA2066",
+    "DongCPU": "Core i9 X series",
+    "CPU": "Core i9 10900X",
+    "SoNhan": "10",
+    "SoLuong": "20",
+    "XyLy": "3.70 GHz",
+    "TocDoToiDa": "4.50 GHz",
+    "DienNangTieuThu": "165 W",
+    "CongNghe": "Cascade Lake 14nm"
+    },
+    "masp": "i9_10_X"
+}, {
+    "name": "NVIDIA GeForce RTX 3060",
+    "company": "NVIDIA",
+    "price": "9.490.000₫",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/22701/dien-thoai-di-dong-Nokia-1280-dienmay.com-l.jpg",
     "star": 5,
-    "rateCount": 7,
+    "rateCount": 250,
     "promo": {
-        "name": "moiramat",
-        "value": ""
+      "name": "giamgia",
+      "value": "500.000"
     },
     "detail": {
-        "screen": "IPS LCD, 6.2', HD+",
-        "os": "Android 8.1 (Oreo)",
-        "camara": "13 MP và 2 MP (2 camera)",
-        "camaraFront": "8 MP",
-        "cpu": "Qualcomm Snapdragon 450 8 nhân 64-bit",
-        "ram": "4 GB",
-        "rom": "64 GB",
-        "microUSB": "MicroSD, hỗ trợ tối đa 256 GB",
-        "battery": "4230 mAh"
+      "GPU": "NVIDIA GeForce RTX 3060",
+      "Architecture": "Ampere",
+      "CUDA_Cores": "3584",
+      "Base_Clock": "1.32 GHz",
+      "Boost_Clock": "1.78 GHz",
+      "Memory": "12 GB GDDR6",
+      "Memory_Bus": "192-bit",
+      "TDP": "170W"
     },
-    "masp": "Rea1"
-}, {
-    "name": "Realme C1",
-    "company": "Realme",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/193286/realme-c1-black-600x600.jpg",
-    "price": "2.490.000",
-    "star": 4,
-    "rateCount": 4,
-    "promo": {
-        "name": "moiramat",
-        "value": ""
-    },
-    "detail": {
-        "screen": "IPS LCD, 6.2', HD+",
-        "os": "Android 8.1 (Oreo)",
-        "camara": "13 MP và 2 MP (2 camera)",
-        "camaraFront": "5 MP",
-        "cpu": "Qualcomm Snapdragon 450 8 nhân 64-bit",
-        "ram": "2 GB",
-        "rom": "16 GB",
-        "microUSB": "MicroSD, hỗ trợ tối đa 256 GB",
-        "battery": "4230 mAh"
-    },
-    "masp": "Rea2"
-}, {
-    "name": "Realme 2 Pro 4GB/64GB",
-    "company": "Realme",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/193464/realme-2-pro-4gb-64gb-blue-600x600.jpg",
-    "price": "5.590.000",
-    "star": 4,
-    "rateCount": 11,
-    "promo": {
-        "name": "moiramat",
-        "value": ""
-    },
-    "detail": {
-        "screen": "IPS LCD, 6.3', Full HD+",
-        "os": "ColorOS 5.2 (Android 8.1)",
-        "camara": "16 MP và 2 MP (2 camera)",
-        "camaraFront": "16 MP",
-        "cpu": "Qualcomm Snapdragon 660 8 nhân",
-        "ram": "4 GB",
-        "rom": "64 GB",
-        "microUSB": "MicroSD, hỗ trợ tối đa 256 GB",
-        "battery": "3500 mAh"
-    },
-    "masp": "Rea3"
-}, {
-    "name": "Philips E331",
-    "company": "Philips",
-    "img": "https://cdn.tgdd.vn/Products/Images/42/139742/philips-e331-xenium-300-300x300.jpg",
-    "price": "890.000",
-    "star": 5,
-    "rateCount": 6,
-    "promo": {
-        "name": "",
-        "value": ""
-    },
-    "detail": {
-        "screen": "TFT, 2.4', QVGA",
-        "os": "Không",
-        "camara": "0.3 MP",
-        "camaraFront": "Không",
-        "cpu": "Không",
-        "ram": "Không",
-        "rom": "Không",
-        "microUSB": "MicroSD, hỗ trợ tối đa 16 GB",
-        "battery": "1600 mAh"
-    },
-    "masp": "Phi0"
+    "masp": "nvdia"
 }, {
     "name": "Philips S329",
     "company": "Philips",
