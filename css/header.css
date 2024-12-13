@@ -11,10 +11,10 @@
 
 	/* Logo */
 		.header .logo {
-			width: 250px;
+			width: 100px;
 			height: 60px;
 			float: left;
-			transition-duration: .1s;
+			transition-duration: 0.1s;
 		}
 		.header .logo:hover {
 			transform: scale(1.05)
