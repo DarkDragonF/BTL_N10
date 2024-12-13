@@ -10,8 +10,8 @@ var list_products = [{
         "value": "320.000"
     },
     "detail": {
-"Socket":  " FCLGA1700 ",
-"DongCPU":"Core i9",
+    "Socket":  " FCLGA1700 ",
+    "DongCPU":"Core i9",
 "CPU": " Intel® Core® i9-14900KS (Raptor Lake)",
  "SoNhan": " 24 (8 Performance-cores/16 Efficient-cores)",
  "SoLuong": "32",
