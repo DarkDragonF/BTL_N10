@@ -81,14 +81,14 @@ function phanTich_URL_chiTietSanPham() {
     // Cập nhật thông số
     
    var info = document.getElementsByClassName('info')[0];
-   var s = addThongSo('Socket', sanPhamHienTai.detail.Socket);
-   s += addThongSo('Dòng CPU', sanPhamHienTai.detail.DongCPU);
-   s += addThongSo('CPU', sanPhamHienTai.detail.CPU);
-   s += addThongSo('Số nhân', sanPhamHienTai.detail.SoNhan);
-   s += addThongSo('Số luồng ', sanPhamHienTai.detail.SoLuong);
-   s += addThongSo('Công nghệ', sanPhamHienTai.detail.CongNghe);
-   s += addThongSo('Tốc độ Turbo tối đa của P-core"', sanPhamHienTai.detail.PCore);
-   s += addThongSo('Tốc độ Turbo tối đa của E-core', sanPhamHienTai.detail.ECore);
+   var s = addThongSo('CPU', sanPhamHienTai.detail.CPU);
+   s += addThongSo('Chipset', sanPhamHienTai.detail.Chipset);
+   s += addThongSo('Bộ nhớ', sanPhamHienTai.detail.Bộ_nhớ);
+   s += addThongSo('Đồ họa', sanPhamHienTai.detail.Đồ_họa);
+   s += addThongSo('Khe mở rộng', sanPhamHienTai.detail.Khe_mở_rộng);
+   s += addThongSo('Lưu trữ', sanPhamHienTai.detail.Lưu_trữ);
+   s += addThongSo('LAN', sanPhamHienTai.detail.LAN);
+   s += addThongSo('USB', sanPhamHienTai.detail.USB);
  
     info.innerHTML = s;
 
