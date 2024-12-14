@@ -25,7 +25,7 @@ window.onload = function () {
 	autocomplete(document.getElementById('search-box'), list_products);
 
 	// thêm tags (từ khóa) vào khung tìm kiếm
-	var tags = ["nvdia", "intel", "cossar", "amd"];
+	var tags = ["AMD", "MSI", "ASUS", "GIGABYTE"];
 	for (var t of tags) addTags(t, "index.html?search=" + t);
 
 	// Thêm danh sách hãng điện thoại
