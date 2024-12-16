@@ -2,7 +2,7 @@ window.onload = function () {
 	khoiTao();
 
 	// Thêm hình vào banner
-	addBanner("img/banners/banner0.gif", "img/banners/banner0.gif");
+	addBanner("img/banners/banner0.png", "img/banners/banner0.png");
 	var numBanner = 9; // Số lượng hình banner
 	for (var i = 1; i <= numBanner; i++) {
 		var linkimg = "img/banners/banner" + i + ".png";
@@ -29,7 +29,7 @@ window.onload = function () {
 	for (var t of tags) addTags(t, "index.html?search=" + t);
 
 	// Thêm danh sách hãng điện thoại
-	var company = ["intel.png" , "cossar.png", "amd.png", "gigabyte.png", "westerm digital"
+	var company = ["intel.png" , "corsair.png", "amd.png", "gigabyte.png"
 	];
 	for (var c of company) addCompany("img/company/" + c, c.slice(0, c.length - 4));
 
