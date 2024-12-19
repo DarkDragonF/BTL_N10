@@ -328,7 +328,7 @@ function setupEventTaiKhoan() {
             }
 
             // Ẩn phần nhập của login nếu ấn signup và ngược lại
-            // href của 2 tab signup và login là #signup và #login -> tiện cho việc getElement dưới đây
+            // href của 2 tab nup và login là #signup và #login -> tiện cho việc getElement dưới đây
             var target = this.href.split('#')[1];
             document.getElementById(target).style.display = 'block';
 
