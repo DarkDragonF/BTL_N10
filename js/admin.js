@@ -245,15 +245,13 @@ function layThongTinSanPhamTuTable(id) {
     var promoName = tr[8].getElementsByTagName('td')[1].getElementsByTagName('select')[0].value;
     var promoValue = tr[9].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
 
-    var screen = tr[11].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var os = tr[12].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var camara = tr[13].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var camaraFront = tr[14].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var cpu = tr[15].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var ram = tr[16].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var rom = tr[17].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var microUSB = tr[18].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
-    var battery = tr[19].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var cpu = tr[11].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var chipset = tr[12].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var doHoa = tr[13].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var boNho = tr[14].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var kheMoRong = tr[15].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var luuTru = tr[16].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
+    var lan = tr[17].getElementsByTagName('td')[1].getElementsByTagName('input')[0].value;
 
     if(isNaN(price)) {
         alert('Giá phải là số nguyên');
@@ -283,15 +281,13 @@ function layThongTinSanPhamTuTable(id) {
                 "value": promoValue
             },
             "detail": {
-                "screen": screen,
-                "os": os,
-                "camara": camara,
-                "camaraFront": camaraFront,
-                "cpu": cpu,
-                "ram": ram,
-                "rom": rom,
-                "microUSB": microUSB,
-                "battery": battery
+                "CPU": cpu,
+                "Chipset": chipset,
+                "Đồ_họa": doHoa,
+                "Bộ_nhớ": boNho,
+                "Khe_mở_rộng": kheMoRong,
+                "Lưu_trữ": luuTru,
+                "LAN": lan
             },
             "masp" : masp
         }
@@ -467,40 +463,32 @@ function addKhungSuaSanPham(masp) {
             <th colspan="2">Thông số kĩ thuật</th>
         </tr>
         <tr>
-            <td>Màn hình:</td>
-            <td><input type="text" value="`+sp.detail.screen+`"></td>
-        </tr>
-        <tr>
-            <td>Hệ điều hành:</td>
-            <td><input type="text" value="`+sp.detail.os+`"></td>
-        </tr>
-        <tr>
-            <td>Camara sau:</td>
-            <td><input type="text" value="`+sp.detail.camara+`"></td>
-        </tr>
-        <tr>
-            <td>Camara trước:</td>
-            <td><input type="text" value="`+sp.detail.camaraFront+`"></td>
-        </tr>
-        <tr>
             <td>CPU:</td>
-            <td><input type="text" value="`+sp.detail.cpu+`"></td>
+            <td><input type="text" value="`+sp.detail.CPU+`"></td>
         </tr>
         <tr>
-            <td>RAM:</td>
-            <td><input type="text" value="`+sp.detail.ram+`"></td>
+            <td>Chipset:</td>
+            <td><input type="text" value="`+sp.detail.Chipset+`"></td>
         </tr>
         <tr>
-            <td>Bộ nhớ trong:</td>
-            <td><input type="text" value="`+sp.detail.rom+`"></td>
+            <td>Đồ họa:</td>
+            <td><input type="text" value="`+sp.detail.Bộ_nhớ+`"></td>
         </tr>
         <tr>
-            <td>Thẻ nhớ:</td>
-            <td><input type="text" value="`+sp.detail.microUSB+`"></td>
+            <td>Bộ nhớ:</td>
+            <td><input type="text" value="`+sp.detail.Đồ_họa+`"></td>
         </tr>
         <tr>
-            <td>Dung lượng Pin:</td>
-            <td><input type="text" value="`+sp.detail.battery+`"></td>
+            <td>Khe mở rộng:</td>
+            <td><input type="text" value="`+sp.detail.Khe_mở_rộng+`"></td>
+        </tr>
+        <tr>
+            <td>Lưu trữ:</td>
+            <td><input type="text" value="`+sp.detail.Lưu_trữ+`"></td>
+        </tr>
+        <tr>
+            <td>LAN:</td>
+            <td><input type="text" value="`+sp.detail.lan+`"></td>
         </tr>
         <tr>
             <td colspan="2"  class="table-footer"> <button onclick="suaSanPham('`+sp.masp+`')">SỬA</button> </td>

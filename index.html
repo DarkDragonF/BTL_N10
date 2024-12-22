@@ -115,6 +115,151 @@
 	<div class="footer"><script>addFooter();</script></div>
 
 	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+	<style>
+		/* Định dạng cho icon Zalo */
+		#zalo-icon {
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  width: 60px;
+		  height: 60px;
+		  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Zalo_Logo_2018.svg/1024px-Zalo_Logo_2018.svg.png');
+		  background-size: cover;
+		  border-radius: 50%;
+		  cursor: pointer;
+		}
+	
+		/* Định dạng cho hộp chứa hình ảnh */
+		#image-container {
+		  display: none; /* Ẩn hình ảnh ban đầu */
+		  position: fixed;
+		  bottom: 100px;
+		  right: 20px;
+		  width: 300px;
+		  height: 300px;
+		  background-color: white;
+		  border: 2px solid #ddd;
+		  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		  padding: 10px;
+		  text-align: center;
+		}
+	
+		#image-container img {
+		  max-width: 100%;
+		  max-height: 100%;
+		}
+	
+		/* Định dạng cho nút đóng hình ảnh */
+		#close-button {
+		  position: absolute;
+		  top: 10px;
+		  right: 10px;
+		  background-color: red;
+		  color: white;
+		  border: none;
+		  padding: 5px 10px;
+		  cursor: pointer;
+		  border-radius: 50%;
+		}
+	  </style>
+	</head>
+	<body>
+	
+	  <!-- Biểu tượng Zalo -->
+	  <div id="zalo-icon" onclick="showImage()"></div>
+	
+	  <!-- Hình ảnh hiển thị khi nhấp vào Zalo -->
+	  <div id="image-container">
+		<button id="close-button" onclick="closeImage()">X</button>
+		<img src="https://media.istockphoto.com/id/1095468748/vi/vec-to/m%C3%A3-qr-m%E1%BA%ABu-m%C3%A3-v%E1%BA%A1ch-hi%E1%BB%87n-%C4%91%E1%BA%A1i-vector-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-%C4%91%E1%BB%83-qu%C3%A9t-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-th%C3%B4ng-minh-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn.jpg?s=612x612&w=0&k=20&c=nCjpoa8qW4lREJGqVCQZsWcrKGOcKKuy5RSsSVzqlL8=" alt="Hình ảnh Zalo">
+	  </div>
+	
+	  <script>
+		// Hàm hiển thị hình ảnh
+		function showImage() {
+		  document.getElementById('image-container').style.display = 'block';
+		}
+	
+		// Hàm đóng hình ảnh
+		function closeImage() {
+		  document.getElementById('image-container').style.display = 'none';
+		}
+	  </script>
+		<div class="footer"><script>addFooter();</script></div>
+	
+		<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+	
+		<style>
+			/* Định dạng cho icon Zalo */
+			#zalo-icon {
+			  position: fixed;
+			  bottom: 70px;
+			  right: 15px;
+			  width: 70px;
+			  height: 70px;
+			  background-image: url('https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png');
+			  background-size: cover;
+			  border-radius: 50%;
+			  cursor: pointer;
+			}
+		
+			/* Định dạng cho hộp chứa hình ảnh */
+			#image-container {
+			  display: none; /* Ẩn hình ảnh ban đầu */
+			  position: fixed;
+			  bottom: 150px;
+			  right: 20px;
+			  width: 300px;
+			  height: 300px;
+			  background-color: white;
+			  border: 2px solid #ddd;
+			  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			  padding: 10px;
+			  text-align: center;
+			}
+		
+			#image-container img {
+			  max-width: 100%;
+			  max-height: 100%;
+			}
+		
+			/* Định dạng cho nút đóng hình ảnh */
+			#close-button {
+			  position: absolute;
+			  top: 10px;
+			  right: 10px;
+			  background-color: red;
+			  color: white;
+			  border: none;
+			  padding: 5px 10px;
+			  cursor: pointer;
+			  border-radius: 50%;
+			}
+		  </style>
+		</head>
+		<body>
+		
+		  <!-- Biểu tượng Zalo -->
+		  <div id="zalo-icon" onclick="showImage()"></div>
+		
+		  <!-- Hình ảnh hiển thị khi nhấp vào Zalo -->
+		  <div id="image-container">
+			<button id="close-button" onclick="closeImage()">X</button>
+			<img src="https://via.placeholder.com/300" alt="Hình ảnh Zalo">
+		  </div>
+		
+		  <script>
+			// Hàm hiển thị hình ảnh
+			function showImage() {
+			  document.getElementById('image-container').style.display = 'block';
+			}
+		
+			// Hàm đóng hình ảnh
+			function closeImage() {
+			  document.getElementById('image-container').style.display = 'none';
+			}
+		  </script>
+	
 </body>
 
 </html>
