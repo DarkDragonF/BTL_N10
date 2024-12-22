@@ -161,17 +161,109 @@
 		  cursor: pointer;
 		  border-radius: 50%;
 		}
+
+		/* Định dạng cho hộp chứa khung chat */
+		#chat-container {
+			display: none; /* Ẩn khung chat ban đầu */
+			position: fixed;
+			bottom: 100px;
+			right: 20px;
+			width: 300px;
+			height: 400px;
+			background-color: white;
+			border: 2px solid #ddd;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 10px;
+			text-align: center;
+		}
+
+		#chat-container iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		/* Định dạng cho nút đóng khung chat */
+		#close-chat-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: red;
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+
+		/* Định dạng cho khung nhập tin nhắn */
+		#chat-input {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			width: calc(100% - 20px);
+			display: flex;
+		}
+
+		#chat-input input {
+			flex: 1;
+			padding: 5px;
+			border: 1px solid #ddd;
+			border-radius: 5px 0 0 5px;
+		}
+
+		#chat-input button {
+			padding: 5px 10px;
+			border: 1px solid #ddd;
+			border-left: none;
+			background-color: #007bff;
+			color: white;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+		}
+
+		/* Định dạng cho tin nhắn */
+		.chat-message {
+			background-color: #f1f1f1;
+			border-radius: 5px;
+			padding: 5px 10px;
+			margin: 5px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.chat-message .timestamp {
+			font-size: 0.8em;
+			color: #888;
+			margin-left: 10px;
+		}
+
+		.chat-message .username {
+			font-weight: bold;
+			margin-right: 10px;
+		}
 	  </style>
 	</head>
 	<body>
 	
 	  <!-- Biểu tượng Zalo -->
-	  <div id="zalo-icon" onclick="showImage()"></div>
+	  <div id="zalo-icon" onclick="showChat()"></div>
 	
 	  <!-- Hình ảnh hiển thị khi nhấp vào Zalo -->
 	  <div id="image-container">
 		<button id="close-button" onclick="closeImage()">X</button>
 		<img src="https://media.istockphoto.com/id/1095468748/vi/vec-to/m%C3%A3-qr-m%E1%BA%ABu-m%C3%A3-v%E1%BA%A1ch-hi%E1%BB%87n-%C4%91%E1%BA%A1i-vector-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-%C4%91%E1%BB%83-qu%C3%A9t-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-th%C3%B4ng-minh-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn.jpg?s=612x612&w=0&k=20&c=nCjpoa8qW4lREJGqVCQZsWcrKGOcKKuy5RSsSVzqlL8=" alt="Hình ảnh Zalo">
+	  </div>
+
+	  <!-- Khung chat hiển thị khi nhấp vào Zalo -->
+	  <div id="chat-container">
+		<button id="close-chat-button" onclick="closeChat()">X</button>
+		<div id="chat-messages" style="height: 80%; overflow-y: auto;"></div>
+		<div id="chat-input">
+			<input type="text" id="chat-message-input" placeholder="Nhập tin nhắn...">
+			<button onclick="sendMessage()">Gửi</button>
+		</div>
 	  </div>
 	
 	  <script>
@@ -184,6 +276,32 @@
 		function closeImage() {
 		  document.getElementById('image-container').style.display = 'none';
 		}
+
+		// Hàm hiển thị khung chat
+		function showChat() {
+			document.getElementById('chat-container').style.display = 'block';
+		}
+
+		// Hàm đóng khung chat
+		function closeChat() {
+			document.getElementById('chat-container').style.display = 'none';
+		}
+
+		// Hàm gửi tin nhắn
+		function sendMessage() {
+			var input = document.getElementById('chat-message-input');
+			var message = input.value.trim();
+			var username = "User"; // Tên tài khoản, có thể thay đổi theo logic của bạn
+			if (message) {
+				var chatMessages = document.getElementById('chat-messages');
+				var messageElement = document.createElement('div');
+				messageElement.className = 'chat-message';
+				messageElement.innerHTML = '<span class="username">' + username + ':</span><span>' + message + '</span><span class="timestamp">' + new Date().toLocaleTimeString() + '</span>';
+				chatMessages.appendChild(messageElement);
+				input.value = '';
+				chatMessages.scrollTop = chatMessages.scrollHeight;
+			}
+		}
 	  </script>
 		<div class="footer"><script>addFooter();</script></div>
 	
@@ -195,8 +313,8 @@
 			  position: fixed;
 			  bottom: 70px;
 			  right: 15px;
-			  width: 70px;
-			  height: 70px;
+			  width: 40px;
+			  height: 40px;
 			  background-image: url('https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png');
 			  background-size: cover;
 			  border-radius: 50%;
@@ -240,12 +358,22 @@
 		<body>
 		
 		  <!-- Biểu tượng Zalo -->
-		  <div id="zalo-icon" onclick="showImage()"></div>
+		  <div id="zalo-icon" onclick="showChat()"></div>
 		
 		  <!-- Hình ảnh hiển thị khi nhấp vào Zalo -->
 		  <div id="image-container">
 			<button id="close-button" onclick="closeImage()">X</button>
 			<img src="https://via.placeholder.com/300" alt="Hình ảnh Zalo">
+		  </div>
+
+		  <!-- Khung chat hiển thị khi nhấp vào Zalo -->
+		  <div id="chat-container">
+			<button id="close-chat-button" onclick="closeChat()">X</button>
+			<div id="chat-messages" style="height: 80%; overflow-y: auto;"></div>
+			<div id="chat-input">
+				<input type="text" id="chat-message-input" placeholder="Nhập tin nhắn...">
+				<button onclick="sendMessage()">Gửi</button>
+			</div>
 		  </div>
 		
 		  <script>
@@ -257,6 +385,32 @@
 			// Hàm đóng hình ảnh
 			function closeImage() {
 			  document.getElementById('image-container').style.display = 'none';
+			}
+
+			// Hàm hiển thị khung chat
+			function showChat() {
+				document.getElementById('chat-container').style.display = 'block';
+			}
+
+			// Hàm đóng khung chat
+			function closeChat() {
+				document.getElementById('chat-container').style.display = 'none';
+			}
+
+			// Hàm gửi tin nhắn
+			function sendMessage() {
+				var input = document.getElementById('chat-message-input');
+				var message = input.value.trim();
+				var username = "User"; // Tên tài khoản, có thể thay đổi theo logic của bạn
+				if (message) {
+					var chatMessages = document.getElementById('chat-messages');
+					var messageElement = document.createElement('div');
+					messageElement.className = 'chat-message';
+					messageElement.innerHTML = '<span class="username">' + username + ':</span><span>' + message + '</span><span class="timestamp">' + new Date().toLocaleTimeString() + '</span>';
+					chatMessages.appendChild(messageElement);
+					input.value = '';
+					chatMessages.scrollTop = chatMessages.scrollHeight;
+				}
 			}
 		  </script>
 	
